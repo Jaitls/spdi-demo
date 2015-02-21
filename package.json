@@ -1,0 +1,10 @@
+{
+  "name": "spdi-demo",
+  "version": "1.0.0",
+  "description": "SPDI MEAN Demo Application",
+  "main": "main.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Jaitls/spdi-demo.git"
+  }
+}
