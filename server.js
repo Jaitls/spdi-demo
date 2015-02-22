@@ -2,8 +2,8 @@ var express = require('express');
 var app = express();
 
 app.get('/', function(req, res) {
-	res.sendfile('index.html'); // load the single view index.html main page
+	res.sendFile('index.html', {root: __dirname }); // load the single view index.html main page
 });
 
-app.listen(3000);
-console.log("Server running on port 3000");
+app.listen(8080);
+console.log("App listening on port 8080");
