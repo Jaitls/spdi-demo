@@ -6,7 +6,7 @@ var app = express();
 app.use(compress());
 
 app.get('/', function(req, res) {
-	res.sendFile('index.html', {root: __dirname}); // load the single view index.html main page
+	res.sendFile('views/index.html', {root: __dirname}); // load the single view index.html main page
 });
 
 app.use('/src', express.static(__dirname + '/src'));
