@@ -23,13 +23,38 @@
     "jquery": "~2.1.3",
     "bootstrap": "~3.3.2",
     "angular": "~1.3.14",
-    "lodash": "~3.4.0"
+    "lodash": "~3.4.0",
+    "fontawesome": "~4.3.0"
   },
   "overrides": {
-  "bootstrap": {
-    "main": [
-      "less/!(variables).less", "dist/fonts/*", "dist/js/*"
-    ]
+    "jquery": {
+      "main": [
+        "dist/jquery.min.js"
+      ]
+    },
+    "bootstrap": {
+      "main": [
+        "dist/js/bootstrap.min.js",
+        "dist/css/bootstrap.min.css",
+        "dist/css/bootstrap-theme.min.css",
+        "dist/fonts/*"
+      ]
+    },
+    "fontawesome": {
+      "main": [
+        "css/font-awesome.min.css",
+        "fonts/*"
+      ]
+    },
+    "angular": {
+      "main": [
+        "angular.min.js"
+      ]
+    },
+    "lodash": {
+      "main": [
+        "lodash.min.js"
+      ]
+    }
   }
-}
 }
