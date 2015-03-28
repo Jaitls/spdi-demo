@@ -32,19 +32,24 @@
                 <th>Number</th>
               </tr>
             </thead>
+            <tbody>
+              <tr ng-repeat="contact in contactlist">
+                <td>{{contact.name}}</td>
+                <td>{{contact.email}}</td>
+                <td>{{contact.number}}</td>
+            </tbody>
         </table>
-        {{sample}}
       </div>
 
-        <h1>Hello World!</h1>
-        <input type="text" ng-model="test"> 
-        <p>{{test}}</p>
+      <div ng-controller="ExampleController">
+      {{greeting}}
+        </div>
 
-        <input type="text" size="40" placeholder="Type your email" id="email"><br />
-        <input type="password" size="40" placeholder="Type your password" id="password"><br />
-        <input type="button" value="Submit" id="submit">
-   
-
-   <script src="dist/js/app.min.js"></script>
+      <div ng-view>
+       
+      </div>
+      <a class="btn btn-default btn-sm" href="#/test"><i class="fa fa-cog fa-lg"></i> Test</a>
+      <a class="btn btn-danger" href="#/"><i class="fa fa-trash-o fa-lg"></i> Delete</a>     
+   <script src="dist/js/app.js"></script>
   </body>
 </html>

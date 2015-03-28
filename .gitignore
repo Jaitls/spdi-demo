@@ -1,7 +1,13 @@
+#exclude local environment variables
+.env
+
 #exclude local node modules directory
 node_modules/
+
 #exclude bower components directory
 bower_components/
 src/main_bower_components
+
 #exclude local build directory
 dist/
+
